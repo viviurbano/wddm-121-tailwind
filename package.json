@@ -4,6 +4,8 @@
   "description": "Workshop with Tailwind CSS",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "npx tailwindcss -i ./input.css -o ./css/tailwind.css",
     "dev": "npx tailwindcss -i ./input.css -o ./css/tailwind.css --watch"
   },
@@ -16,8 +18,9 @@
   "bugs": {
     "url": "https://github.com/viviurbano/wddm-121-tailwind/issues"
   },
-  "homepage": "https://github.com/viviurbano/wddm-121-tailwind#readme",
+  "homepage": "https://viviurbano.github.io/wddm-121-tailwind",
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "tailwindcss": "^3.0.24"
   }
 }
