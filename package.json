@@ -1,0 +1,23 @@
+{
+  "name": "wddm-121-tailwind",
+  "version": "1.0.0",
+  "description": "Workshop with Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./input.css -o ./css/tailwind.css",
+    "dev": "npx tailwindcss -i ./input.css -o ./css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viviurbano/wddm-121-tailwind.git"
+  },
+  "author": "Viviane Urbano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/viviurbano/wddm-121-tailwind/issues"
+  },
+  "homepage": "https://github.com/viviurbano/wddm-121-tailwind#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}

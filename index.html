@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Workshop</title>
+    <link href="/css/tailwind.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="bg-gradient-to-b from-blue-100 to-white dark:from-black dark:to-midnight overflow-x-hidden"
+    >
+      <div
+        class="w-full max-w-[1080px] flex flex-col xl:flex-row items-center mx-auto px-2 pt-4 xl:pt-8 mb-8"
+      >
+        <div class="flex-shrink-0 -mb-6 xl:mb-0 xl:-mt-8 xl:-ml-20 xl:mr-12">
+          <img
+            src="/img/hero.png"
+            width="496"
+            height="576"
+            class="max-h-[260px] w-auto ml-[-12px] xl:ml-[-20px] xl:max-h-[600px]"
+            alt="Pipe from Mario Brother"
+          />
+        </div>
+        <div
+          class="flex-auto flex flex-col justify-center items-center xl:items-start pt-12 px-8 md:px-0"
+        >
+          <h1
+            class="text-4xl xl:text-6xl leading-[38px] xl:leading-[60px] font-extrabold text-center xl:text-left text-gray-900 dark:text-white max-w-2xl"
+          >
+            Bump is the easy way to<!-- -->
+            <span
+              class="inline text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500"
+              >release</span
+            >
+            &amp;
+            <span
+              class="inline text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-pink-500"
+              >update</span
+            >
+            indie Mac apps.
+          </h1>
+          <p
+            class="text-xl font-medium text-center xl:text-left text-gray-900 dark:text-white leading-relaxed pt-8 max-w-lg"
+          >
+            An automated pipeline designed to make distributing apps with
+            <a
+              href="https://sparkle-project.org"
+              target="_blank"
+              class="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 transition"
+              >Sparkle</a
+            >
+            easier to maintain and collaborate on.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row items-center mt-8 space-x-0 sm:space-x-4 space-y-4 sm:space-y-0"
+          >
+            <a
+              href="#"
+              class="flex items-center space-x-2 transform transition-all hover:translate-y-[-2px] hover:shadow-lg shadow text-white text-lg font-medium px-5 py-3 rounded-lg bcg-blue"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 26"
+                width="22"
+                height="22"
+                class="transform translate-x-[0px] translate-y-[0px] opacity-75"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M13 0C5.817 0 0 5.817 0 13c0 5.753 3.721 10.611 8.889 12.334.65.114.894-.276.894-.618 0-.309-.017-1.332-.017-2.421-3.266.601-4.111-.796-4.371-1.528-.146-.373-.78-1.527-1.332-1.836-.455-.244-1.105-.845-.017-.861 1.024-.016 1.755.942 1.999 1.332 1.17 1.967 3.039 1.414 3.786 1.073.114-.845.455-1.414.829-1.739-2.893-.325-5.915-1.446-5.915-6.418 0-1.414.504-2.584 1.332-3.494-.13-.325-.585-1.658.13-3.445 0 0 1.09-.341 3.576 1.332a12.063 12.063 0 013.25-.439c1.104 0 2.21.147 3.25.44 2.486-1.69 3.575-1.333 3.575-1.333.715 1.787.26 3.12.13 3.445.828.91 1.332 2.063 1.332 3.494 0 4.988-3.039 6.093-5.931 6.418.471.406.877 1.186.877 2.405 0 1.739-.016 3.137-.016 3.575 0 .341.244.748.894.618C22.279 23.61 26 18.736 26 13c0-7.183-5.817-13-13-13z"
+                ></path>
+              </svg>
+              <span>View the repo</span></a
+            >
+            <div
+              class="py-3 px-4 border dark:border-white dark:border-opacity-10 rounded-lg hidden sm:inline-flex"
+            >
+              <span
+                class="text-gray-600 dark:text-gray-300 xl:inline hidden pr-1"
+                >Used Bump before?</span
+              >
+              <a
+                class="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 font-medium transition"
+                href="#"
+                >Create your repo now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="max-w-5xl mx-auto px-2 flex flex-col xl:flex-wrap xl:flex-row justify-between"
+    >
+      <div class="xl:w-1/2 space-x-4 xl:mb-8">
+        <div
+          class="p-2 xl:p-6 xl:bg-blue-50 xl:bg-opacity-60 dark:xl:bg-black dark:xl:bg-opacity-20 rounded-xl xl:text-lg leading-relaxed xl:mx-4 mb-4 xl:mb-0"
+        >
+          <div class="flex xl:flex-col xl:items-center xl:my-4">
+            <div
+              class="text-white flex items-center justify-center w-14 h-14 xl:w-16 xl:h-16 flex-shrink-0 mr-4 xl:mr-0 xl:mb-4 rounded-lg xl:rounded-2xl overflow-hidden shadow-lg bcg-blue"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34">
+                <g
+                  fill="none"
+                  fill-rule="evenodd"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke-width="3" d="M17 2L2 9.5 17 17l15-7.5z"></path>
+                  <path
+                    stroke-width="2.5"
+                    opacity="0.5"
+                    d="M2 24.5L17 32l15-7.5M2 17l15 7.5L32 17"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="flex flex-col xl:items-center xl:text-center">
+              <h2 class="font-semibold mb-1">Seamless workflow</h2>
+              <p
+                class="text-midnight text-base leading-relaxed text-opacity-70 dark:text-gray-400 xl:px-4"
+              >
+                Create a changelog, upload your new App archive and push it live
+                without leaving the GitHub UI. It&#x27;s perfect for teams
+                building and releasing together.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="xl:w-1/2 space-x-4 xl:mb-8">
+        <div
+          class="p-2 xl:p-6 xl:bg-blue-50 xl:bg-opacity-60 dark:xl:bg-black dark:xl:bg-opacity-20 rounded-xl xl:text-lg leading-relaxed xl:mx-4 mb-4 xl:mb-0"
+        >
+          <div class="flex xl:flex-col xl:items-center xl:my-4">
+            <div
+              class="text-white flex items-center justify-center w-14 h-14 xl:w-16 xl:h-16 flex-shrink-0 mr-4 xl:mr-0 xl:mb-4 rounded-lg xl:rounded-2xl overflow-hidden shadow-lg bcg-pink"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="38">
+                <g
+                  fill="none"
+                  fill-rule="evenodd"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  transform="translate(2 2)"
+                >
+                  <circle
+                    cx="10.5"
+                    cy="10.5"
+                    r="10.5"
+                    stroke-width="3"
+                  ></circle>
+                  <path
+                    stroke-width="2.5"
+                    opacity="0.5"
+                    d="M4.057 24.331L2 34l8.5-3.184L19 34l-2.057-9.68"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="flex flex-col xl:items-center xl:text-center">
+              <h2 class="font-semibold mb-1">
+                Automatic certificate management
+              </h2>
+              <p
+                class="text-midnight text-base leading-relaxed text-opacity-70 dark:text-gray-400 xl:px-4"
+              >
+                Supply Bump with a Sparkle private key and it will take care of
+                creating signatures. Your private key never leaves GitHub’s
+                encrypted secrets store.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="xl:w-1/2 space-x-4 xl:mb-8">
+        <div
+          class="p-2 xl:p-6 xl:bg-blue-50 xl:bg-opacity-60 dark:xl:bg-black dark:xl:bg-opacity-20 rounded-xl xl:text-lg leading-relaxed xl:mx-4 mb-4 xl:mb-0"
+        >
+          <div class="flex xl:flex-col xl:items-center xl:my-4">
+            <div
+              class="text-white flex items-center justify-center w-14 h-14 xl:w-16 xl:h-16 flex-shrink-0 mr-4 xl:mr-0 xl:mb-4 rounded-lg xl:rounded-2xl overflow-hidden shadow-lg bcg-yellow"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="33"
+                height="40"
+                fill="currentColor"
+              >
+                <path
+                  d="M18.95 39.648c.498 0 .874-.36.943-.873 1.233-9.284 2.552-10.74 11.733-11.75.531-.07.908-.463.908-.96 0-.497-.377-.89-.908-.96-9.147-1.061-10.448-2.432-11.733-11.75-.086-.514-.445-.873-.942-.873-.497 0-.874.36-.942.873-1.234 9.284-2.553 10.74-11.734 11.75-.548.07-.907.463-.907.96 0 .497.36.89.907.96 9.113 1.215 10.38 2.431 11.734 11.75.085.513.445.873.942.873z"
+                ></path>
+                <path
+                  d="M15.388 8.73c.223 0 .36-.137.394-.36.514-2.826.48-2.86 3.443-3.442.223-.035.377-.172.377-.411 0-.223-.154-.36-.377-.394-2.946-.566-2.878-.617-3.443-3.443-.034-.223-.171-.36-.394-.36s-.36.137-.411.36c-.548 2.792-.463 2.843-3.443 3.443-.223.034-.36.17-.36.394 0 .24.137.376.377.41 2.946.583 2.93.617 3.426 3.444.051.222.188.36.411.36zM7.08 20.72c.343 0 .6-.24.651-.582.6-4.539.737-4.556 5.464-5.447.326-.051.583-.291.583-.65 0-.343-.257-.6-.6-.652-4.693-.65-4.864-.788-5.447-5.412-.051-.36-.308-.6-.65-.6-.36 0-.617.24-.651.617-.566 4.522-.771 4.522-5.465 5.395-.342.069-.582.309-.582.651 0 .377.24.6.65.651 4.643.737 4.831.874 5.397 5.413.034.377.29.617.65.617z"
+                  opacity="0.5"
+                ></path>
+              </svg>
+            </div>
+            <div class="flex flex-col xl:items-center xl:text-center">
+              <h2 class="font-semibold mb-1">Built for Sparkle</h2>
+              <p
+                class="text-midnight text-base leading-relaxed text-opacity-70 dark:text-gray-400 xl:px-4"
+              >
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 transition"
+                  >Sparkle</a
+                >
+                <!-- -->has become the standard release mechanism for indie Mac
+                developers. Bump has been built from the ground up to be the
+                perfect companion toolchain.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="xl:w-1/2 space-x-4 xl:mb-8">
+        <div
+          class="p-2 xl:p-6 xl:bg-blue-50 xl:bg-opacity-60 dark:xl:bg-black dark:xl:bg-opacity-20 rounded-xl xl:text-lg leading-relaxed xl:mx-4 mb-4 xl:mb-0"
+        >
+          <div class="flex xl:flex-col xl:items-center xl:my-4">
+            <div
+              class="text-white flex items-center justify-center w-14 h-14 xl:w-16 xl:h-16 flex-shrink-0 mr-4 xl:mr-0 xl:mb-4 rounded-lg xl:rounded-2xl overflow-hidden shadow-lg bcg-green"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24">
+                <g
+                  fill="none"
+                  fill-rule="evenodd"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                >
+                  <path d="M2 18l9-8-9-8"></path>
+                  <path opacity="0.5" d="M14 22.5h12"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="flex flex-col xl:items-center xl:text-center">
+              <h2 class="font-semibold mb-1">DevOps included</h2>
+              <p
+                class="text-midnight text-base leading-relaxed text-opacity-70 dark:text-gray-400 xl:px-4"
+              >
+                Bump uses<!-- -->
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 transition"
+                  >Terraform</a
+                >
+                <!-- -->under the hood to take care of provisioning
+                infrastructure. All you need to bring is your own AWS account.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full max-w-lg mx-auto flex items-center justify-center py-8">
+      <a
+        href="#"
+        class="flex items-center space-x-2 py-3 px-4 border border-blue-100 border-opacity-50 dark:border-white dark:border-opacity-10 rounded-lg text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 hover:bg-blue-50 bg-opacity-60 hover:bg-opacity-60 dark:bg-opacity-0 dark:hover:bg-opacity-5 transition"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 57 32"
+          fill="currentColor"
+          height="20"
+          width="36"
+        >
+          <path
+            d="M31.782 16c0 8.837-7.115 16-15.89 16C7.114 32 0 24.835 0 16S7.115 0 15.891 0c8.777 0 15.89 7.164 15.89 16m17.433 0c0 8.318-3.557 15.063-7.945 15.063S33.323 24.318 33.323 16c0-8.317 3.557-15.063 7.945-15.063 4.389 0 7.946 6.744 7.946 15.063m7.13 0c0 7.45-1.25 13.494-2.794 13.494-1.543 0-2.794-6.042-2.794-13.494S52.007 2.506 53.55 2.506c1.543 0 2.795 6.042 2.795 13.494"
+          ></path>
+        </svg>
+        <p class="font-medium">
+          Read the Medium post<!-- -->
+          <span class="hidden sm:inline-flex">about why we built Bump</span>
+        </p></a
+      >
+    </div>
+    <div
+      class="border-t border-blue-100 border-opacity-50 dark:border-gray-900 mt-12 pt-16 bg-blue-50 bg-opacity-60 dark:bg-black dark:bg-opacity-20"
+    >
+      <div class="max-w-6xl mx-auto px-6 flex flex-col items-center">
+        <h1
+          class="text-4xl mb-6 xl:text-4xl font-extrabold text-center xl:text-left text-gray-900 dark:text-white"
+        >
+          Release a new version in three steps
+        </h1>
+        <div class="mt-6 flex-auto flex flex-col items-center xl:w-1/2">
+          <div
+            class="shadow-lg from-gray-700 to-gray-400 w-10 h-10 rounded-full flex justify-center items-center font-bold text-white mb-4 bcg-blue"
+          >
+            1
+          </div>
+          <h2 class="font-bold">Write your changelog</h2>
+          <p class="text-gray-500 px-8 text-center">
+            Bump lets you write YAML and Markdown in the same file to streamline
+            the authoring process.
+          </p>
+        </div>
+        <div class="mt-6 flex-auto flex flex-col items-center xl:w-1/2">
+          <div
+            class="shadow-lg from-gray-700 to-gray-400 w-10 h-10 rounded-full flex justify-center items-center font-bold text-white mb-4 bcg-blue"
+          >
+            2
+          </div>
+          <h2 class="font-bold">Open a pull request</h2>
+          <p class="text-gray-500 px-8 text-center">
+            Commit your new version metadata alongside the new version of your
+            app and open your pull request for review.
+          </p>
+        </div>
+        <div class="mt-6 flex-auto flex flex-col items-center xl:w-1/2">
+          <div
+            class="shadow-lg from-gray-700 to-gray-400 w-10 h-10 rounded-full flex justify-center items-center font-bold text-white mb-4 bcg-blue"
+          >
+            3
+          </div>
+          <h2 class="font-bold">Bump takes care of the rest</h2>
+          <p class="text-gray-500 px-8 text-center">
+            As soon as your pull request is merged, Bump gets to work;
+            processing your update, signing your app binary and releasing the
+            update on your AWS S3 infrastructure. All automatically.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center sm:space-x-2 space-y-2 sm:space-y-0 bg-white dark:bg-black dark:bg-opacity-20 text-base text-gray-800 dark:text-white dark:text-opacity-60 rounded-lg mt-8 mb-6 p-6 shadow-sleeve dark:shadow-highlight w-full"
+          >
+            <div class="flex flex-col items-center flex-1 text-center">
+              <div
+                class="flex items-center justify-center text-white bg-[#6F42C1] rounded-full w-14 h-14"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27"
+                  height="30"
+                  class="transform translate-x-1"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M2.31.619a4.618 4.618 0 113.432 8.48 7.46 7.46 0 007.403 6.533h4.743a4.619 4.619 0 110 2.131h-4.743a9.592 9.592 0 01-7.46-3.562v6.404c0 .042-.003.084-.008.125a4.618 4.618 0 11-2.117-.001 1.098 1.098 0 01-.007-.124V9.237c0-.042.002-.084.007-.125A4.618 4.618 0 012.31.62zm2.308 22.118a2.487 2.487 0 100 4.974 2.487 2.487 0 000-4.974zm17.764-8.526a2.487 2.487 0 100 4.973 2.487 2.487 0 000-4.973zM4.618 2.13a2.487 2.487 0 100 4.974 2.487 2.487 0 000-4.973z"
+                  ></path>
+                </svg>
+              </div>
+              <span class="text-sm opacity-75 pt-2">Merge PR on GitHub</span>
+            </div>
+            <ul
+              class="flex flex-col sm:flex-row items-center justify-between w-1 sm:w-8 h-8 sm:h-1 sm:pb-8"
+            >
+              <li class="w-1 h-1 bg-gray-400 rounded-full"></li>
+              <li class="w-1 h-1 bg-gray-400 rounded-full"></li>
+              <li class="w-1 h-1 bg-gray-400 rounded-full"></li>
+              <li class="w-1 h-1 bg-gray-400 rounded-full"></li>
+            </ul>
+            <div class="flex flex-col items-center flex-1 text-center">
+              <div
+                class="flex items-center justify-center text-white bg-[#2188FF] rounded-full w-14 h-14"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M16 0c8.836 0 16 7.164 16 16s-7.164 16-16 16S0 24.836 0 16 7.164 0 16 0zm0 2.182a13.818 13.818 0 100 27.636 13.818 13.818 0 000-27.636zm-2.516 7.994l8.11 5.212a.727.727 0 010 1.224l-8.11 5.213a.727.727 0 01-1.12-.61V10.787a.727.727 0 011.12-.611z"
+                  ></path>
+                </svg>
+              </div>
+              <span class="text-sm opacity-75 pt-2">Run GitHub Actions</span>
+            </div>
+            <ul
+              class="flex flex-col sm:flex-row items-center justify-between w-1 sm:w-8 h-8 sm:h-1 sm:pb-8"
+            >
+              <li class="w-1 h-1 bg-gray-400 rounded-full"></li>
+              <li class="w-1 h-1 bg-gray-400 rounded-full"></li>
+              <li class="w-1 h-1 bg-gray-400 rounded-full"></li>
+              <li class="w-1 h-1 bg-gray-400 rounded-full"></li>
+            </ul>
+            <div class="flex flex-col items-center flex-1 text-center">
+              <div
+                class="flex items-center justify-center text-white bg-[#7B42BC] rounded-full w-14 h-14"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30">
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M8.96 15.554l8.077 4.664v9.324L8.961 24.88v-9.325zm0-10.348l8.077 4.664v9.324l-8.076-4.661V5.206zm17.04 0v9.327l-8.077 4.661V9.87L26 5.206zM0 0l8.077 4.663v9.327L0 9.327V0z"
+                  ></path>
+                </svg>
+              </div>
+              <span class="text-sm opacity-75 pt-2">Apply Terraform Plan</span>
+            </div>
+            <ul
+              class="flex flex-col sm:flex-row items-center justify-between w-1 sm:w-8 h-8 sm:h-1 sm:pb-8"
+            >
+              <li class="w-1 h-1 bg-gray-400 rounded-full"></li>
+              <li class="w-1 h-1 bg-gray-400 rounded-full"></li>
+              <li class="w-1 h-1 bg-gray-400 rounded-full"></li>
+              <li class="w-1 h-1 bg-gray-400 rounded-full"></li>
+            </ul>
+            <div class="flex flex-col items-center flex-1 text-center">
+              <div
+                class="flex items-center justify-center text-white bg-[#FF9800] rounded-full w-14 h-14"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="17">
+                  <g fill="currentColor" fill-rule="evenodd">
+                    <path
+                      fill-rule="nonzero"
+                      d="M7.816 6.252c0 .354.038.642.104.852.075.21.17.44.301.69a.421.421 0 01.066.22c0 .096-.056.191-.179.287l-.594.402a.447.447 0 01-.245.086c-.094 0-.189-.048-.283-.134a2.958 2.958 0 01-.34-.45 7.453 7.453 0 01-.291-.565c-.736.881-1.66 1.322-2.772 1.322-.792 0-1.423-.23-1.885-.69C1.236 7.812 1 7.2 1 6.434c0-.814.283-1.474.858-1.972s1.339-.747 2.31-.747c.32 0 .65.029.999.076.349.048.707.125 1.084.211v-.699c0-.727-.15-1.235-.443-1.532-.302-.297-.81-.44-1.537-.44-.33 0-.67.038-1.018.124a7.428 7.428 0 00-1.018.326c-.15.067-.264.105-.33.124a.57.57 0 01-.15.029c-.133 0-.199-.096-.199-.297v-.469c0-.153.02-.268.066-.335a.707.707 0 01.264-.201c.33-.172.726-.316 1.188-.43a5.632 5.632 0 011.47-.183c1.122 0 1.943.259 2.47.776.519.517.783 1.302.783 2.355v3.102h.019zM3.988 7.707c.311 0 .632-.057.971-.172a2.1 2.1 0 00.896-.613c.15-.182.264-.383.32-.612.057-.23.095-.508.095-.833v-.403a7.764 7.764 0 00-.868-.162 6.996 6.996 0 00-.886-.058c-.631 0-1.093.125-1.404.383-.311.259-.462.623-.462 1.101 0 .45.113.785.349 1.015.226.24.556.354.99.354zm7.57 1.034c-.17 0-.282-.028-.358-.095-.075-.058-.141-.192-.198-.374L8.787.872a1.7 1.7 0 01-.085-.384c0-.153.075-.24.226-.24h.924c.18 0 .302.03.368.097.075.057.132.191.188.373l1.584 6.338 1.47-6.338c.048-.191.104-.316.18-.373.075-.058.207-.096.377-.096h.754c.18 0 .302.029.377.096.076.057.142.191.18.373l1.489 6.415 1.63-6.415c.057-.191.123-.316.19-.373.075-.058.197-.096.367-.096h.877c.15 0 .235.077.235.24 0 .047-.01.095-.019.152-.01.058-.028.135-.066.24l-2.272 7.4c-.056.192-.122.317-.198.374a.596.596 0 01-.358.096h-.81c-.18 0-.302-.029-.378-.096-.075-.067-.141-.191-.179-.383l-1.46-6.175-1.453 6.166c-.047.191-.103.316-.179.383-.075.067-.207.095-.377.095h-.81zM23.672 9c-.49 0-.98-.057-1.452-.172-.47-.115-.839-.24-1.084-.383-.15-.086-.254-.182-.292-.268a.685.685 0 01-.056-.268V7.42c0-.2.075-.297.216-.297.057 0 .113.01.17.03.057.018.141.057.236.095.32.143.669.258 1.037.335.377.077.744.115 1.122.115.593 0 1.055-.105 1.376-.316.32-.21.49-.517.49-.91a.94.94 0 00-.254-.67c-.17-.182-.49-.345-.953-.498l-1.367-.43c-.688-.22-1.197-.546-1.508-.977a2.304 2.304 0 01-.471-1.388c0-.403.085-.757.254-1.063a2.45 2.45 0 01.68-.785c.282-.22.602-.383.98-.498A4.05 4.05 0 0123.983 0c.208 0 .425.01.632.038.217.029.415.067.613.106.188.047.367.095.537.153.17.057.302.115.396.172a.819.819 0 01.283.24.522.522 0 01.085.315v.45c0 .202-.076.307-.217.307-.076 0-.198-.038-.358-.115-.538-.249-1.141-.373-1.81-.373-.538 0-.962.086-1.254.268-.292.182-.443.46-.443.852 0 .268.094.498.283.68.188.181.537.363 1.036.526l1.34.431c.678.22 1.168.527 1.46.92.293.392.434.842.434 1.34 0 .411-.085.785-.245 1.11-.17.326-.396.613-.688.843-.293.24-.641.411-1.047.536A4.419 4.419 0 0123.672 9z"
+                    ></path>
+                    <path
+                      d="M25.314 13.703C22.251 15.857 17.8 17 13.972 17 8.608 17 3.775 15.112.124 11.975c-.289-.248-.028-.584.317-.39 3.948 2.18 8.819 3.5 13.857 3.5 3.399 0 7.133-.673 10.57-2.055.512-.222.95.319.446.673z"
+                    ></path>
+                    <path
+                      d="M26.59 12.321c-.39-.478-2.589-.23-3.585-.115-.298.035-.345-.213-.075-.399 1.751-1.17 4.629-.833 4.964-.443.335.399-.093 3.137-1.732 4.449-.252.203-.494.097-.382-.169.372-.877 1.201-2.853.81-3.323z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <span class="text-sm opacity-75 pt-2">Deploy S3 bucket</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center border-t border-blue-100 border-opacity-75 dark:border-white dark:border-opacity-10 mt-16 text-gray-600 bg-white dark:bg-black dark:bg-opacity-10 py-12 space-y-4"
+      >
+        <span class="dark:text-white">Ready to try Bump?</span>
+        <div
+          class="flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0"
+        >
+          <a
+            href="#"
+            class="flex items-center space-x-2 transform transition-all hover:translate-y-[-2px] hover:shadow-lg shadow text-white text-lg font-medium px-5 py-3 rounded-lg bcg-blue"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 26 26"
+              width="22"
+              height="22"
+              class="transform translate-x-[0px] translate-y-[0px] opacity-75"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M13 0C5.817 0 0 5.817 0 13c0 5.753 3.721 10.611 8.889 12.334.65.114.894-.276.894-.618 0-.309-.017-1.332-.017-2.421-3.266.601-4.111-.796-4.371-1.528-.146-.373-.78-1.527-1.332-1.836-.455-.244-1.105-.845-.017-.861 1.024-.016 1.755.942 1.999 1.332 1.17 1.967 3.039 1.414 3.786 1.073.114-.845.455-1.414.829-1.739-2.893-.325-5.915-1.446-5.915-6.418 0-1.414.504-2.584 1.332-3.494-.13-.325-.585-1.658.13-3.445 0 0 1.09-.341 3.576 1.332a12.063 12.063 0 013.25-.439c1.104 0 2.21.147 3.25.44 2.486-1.69 3.575-1.333 3.575-1.333.715 1.787.26 3.12.13 3.445.828.91 1.332 2.063 1.332 3.494 0 4.988-3.039 6.093-5.931 6.418.471.406.877 1.186.877 2.405 0 1.739-.016 3.137-.016 3.575 0 .341.244.748.894.618C22.279 23.61 26 18.736 26 13c0-7.183-5.817-13-13-13z"
+              ></path>
+            </svg>
+            <span>View the repo</span>
+          </a>
+          <a
+            class="flex items-center space-x-2 transform transition-all hover:translate-y-[-2px] text-blue-500 dark:text-blue-400 bg-blue-50 dark:bg-opacity-5 dark:shadow-highlight text-lg font-medium px-5 py-3 rounded-lg"
+            href="#"
+            >Create your repo now</a
+          >
+        </div>
+      </div>
+    </div>
+    <footer class="px-10 dark:bg-black dark:bg-opacity-30">
+      <div
+        class="w-full max-w-5xl mx-auto py-12 border-t border-gray-200 dark:border-white dark:border-opacity-10 text-center sm:text-left"
+      >
+        <div
+          class="flex flex-col sm:flex-row px-0 xl:px-6 justify-between text-lg"
+        >
+          <p class="max-w-lg sm:mr-8">
+            Made by<!-- -->
+            <a class="font-semibold hover:opacity-75 transition" href="/"
+              >Replay</a
+            >, a tiny studio making simple apps for your Mac, brought to you
+            by<img
+              src="/img/alasdair.jpeg"
+              width="24"
+              height="24"
+              alt="Alasdair Monk"
+              class="inline-flex ml-1.5 rounded-full shadow-avatar transform translate-y-[-2px]"
+            />
+            <a
+              href="https://alasdairmonk.com"
+              class="font-semibold hover:opacity-75 transition"
+              target="_blank"
+              >Alasdair Monk</a
+            >
+            <!-- -->&amp;<img
+              src="/img/hector.jpeg"
+              width="24"
+              height="24"
+              alt="Hector Simpson"
+              class="inline-flex ml-1.5 rounded-full shadow-avatar transform translate-y-[-2px]"
+            />
+            <a
+              href="#"
+              class="font-semibold hover:opacity-75 transition"
+              target="_blank"
+              >Hector Simpson</a
+            >.
+          </p>
+          <a
+            class="opacity-50 hover:opacity-60 active:opacity-75 transition"
+            href="/"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="188"
+              height="37"
+              fill="currentColor"
+              class="flex-shrink-0 mt-8 mx-auto sm:mx-0 sm:mt-1 transform translate-x-[0px] translate-y-[0px]"
+            >
+              <path
+                d="M0 0h13.95c8.383 0 13.587 4.842 13.587 10.984 0 5.432-2.376 8.316-6.053 10.131l-.271.131 7.625 15.393V37h-8.962l-6.469-13.586H8.384V37H0V0h13.95H0zm61.073 0v6.938H44.738v8.093h13.805v6.938H44.738v8.093h16.335V37H36.354V0h24.719zm6.938 0h14.31C90.995 0 95.91 5.203 95.91 12.285c0 6.899-4.76 11.487-13.177 11.631l-.41.004h-5.927V37H68.01V0h14.31-14.31zm41.92 0v30.063h14.96V37h-23.344V0h8.384zm53.423 0l7.806 15.754L178.966 0H188l-12.648 23.197V37h-8.384V23.197L154.32 0h9.034zM149.94 0v37l-31.141-18.5L149.938 0zm-6.92 12.175L132.371 18.5l10.646 6.325v-12.65zM82.62 6.937h-6.226v10.118h5.926c3.759-.073 5.204-2.313 5.204-5.131 0-2.602-1.368-4.93-4.904-4.987zm-68.672 0H8.384v9.612h5.565c3.542 0 5.276-1.735 5.276-4.77 0-3.016-1.702-4.738-4.974-4.837l-.302-.005z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <small class="block text-sm font-medium pt-8 px-6 opacity-50"
+          >© 2022 Replay Software.</small
+        >
+      </div>
+    </footer>
+  </body>
+</html>
